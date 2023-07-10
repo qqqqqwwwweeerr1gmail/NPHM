@@ -1,6 +1,6 @@
 import numpy as np
 from scipy.spatial import cKDTree as KDTree
-from data import DataManager
+from NPHM.data.manager import DataManager
 
 
 # This function is mostly apdopted from occupancy_networks/im2mesh/common.py and occupancy_networks/im2mesh/eval.py

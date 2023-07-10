@@ -7,12 +7,14 @@ from glob import glob
 import numpy as np
 import math
 import wandb
+import mcubes
+import trimesh
 import traceback
 
 from NPHM.models.loss_functions import compute_loss
-from utils.reconstruction import create_grid_points_from_bounds, mesh_from_logits
+from NPHM.utils.reconstruction import create_grid_points_from_bounds, mesh_from_logits
 from NPHM.models.reconstruction import get_logits
-import env_paths
+from NPHM import env_paths
 
 
 def count_parameters(model):

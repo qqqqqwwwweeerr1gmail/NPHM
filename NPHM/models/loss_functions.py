@@ -1,5 +1,7 @@
-from models.diff_operators import gradient
+from NPHM.models.diff_operators import gradient
 import torch
+from torch.nn import functional as F
+import numpy as np
 
 
 def compute_loss(batch, decoder, latent_codes, device):
