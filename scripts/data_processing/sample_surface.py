@@ -13,9 +13,8 @@ import traceback
 import tyro
 from multiprocessing import Pool
 
-from NPHM.data.manager import DataManager
-from NPHM import env_paths
-
+from data import DataManager
+import env_paths
 
 
 def get_color(tex_path, uv_coords):

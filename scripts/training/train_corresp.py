@@ -1,15 +1,13 @@
-from NPHM.data.face_dataset import ScannerDeformatioData
+from data import ScannerDeformatioData
 from NPHM.models import training_corresp as training
 import argparse
-import torch
 import json, os, yaml
 import torch
 import numpy as np
 
 from NPHM.models.deepSDF import DeformationNetwork, DeepSDF
 from NPHM.models.EnsembledDeepSDF import FastEnsembleDeepSDFMirrored
-from NPHM import env_paths
-
+import env_paths
 
 parser = argparse.ArgumentParser(
     description='Run Model'

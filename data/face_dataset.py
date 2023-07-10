@@ -3,13 +3,12 @@ from torch.utils.data import Dataset
 import torch
 import numpy as np
 import os
-import trimesh
 from typing import Literal
 import traceback
 
 from .utils import  uniform_ball
-import NPHM.env_paths as env_paths
-from NPHM.data.manager import DataManager
+import env_paths as env_paths
+from data.manager import DataManager
 
 NUM_SPLITS = env_paths.NUM_SPLITS
 NUM_SPLITS_EXPR = env_paths.NUM_SPLITS_EXPR

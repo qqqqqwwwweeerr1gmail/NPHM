@@ -1,10 +1,9 @@
 import os
 import numpy as np
-import pyvista as pv
 
-from NPHM.data.manager import DataManager
-from NPHM import env_paths
-from NPHM.evaluation.render_utils import fibonacci_sphere, m3dLookAt, render_glcam, get_3d_points
+from data import DataManager
+import env_paths
+from evaluation.render_utils import fibonacci_sphere, m3dLookAt, render_glcam, get_3d_points
 
 
 def main(RENDER_BACK):

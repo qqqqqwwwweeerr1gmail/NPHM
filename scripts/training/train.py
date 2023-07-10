@@ -1,6 +1,5 @@
-from NPHM.data.face_dataset import ScannerData
+from data import ScannerData
 import argparse
-import torch
 import json, os, yaml
 import torch
 import numpy as np
@@ -9,7 +8,7 @@ import numpy as np
 from NPHM.models.EnsembledDeepSDF import FastEnsembleDeepSDFMirrored
 from NPHM.models.deepSDF import DeepSDF
 from NPHM.models.training import TrainerAutoDecoder
-from NPHM import env_paths
+import env_paths
 
 parser = argparse.ArgumentParser(
     description='Run Model'

@@ -1,20 +1,19 @@
 from NPHM.models.deepSDF import DeepSDF, DeformationNetwork
 from NPHM.models.EnsembledDeepSDF import FastEnsembleDeepSDFMirrored
-from NPHM import env_paths
-from NPHM.utils.reconstruction import create_grid_points_from_bounds, mesh_from_logits
-from NPHM.models.reconstruction import deform_mesh, get_logits, get_logits_backward
-from NPHM.models.fitting import inference_iterative_root_finding_joint, inference_identity_space
-from NPHM.data.manager import DataManager
+import env_paths
+from utils.reconstruction import create_grid_points_from_bounds, mesh_from_logits
+from NPHM.models.reconstruction import deform_mesh, get_logits
+from NPHM.models.fitting import inference_iterative_root_finding_joint
+from data import DataManager
 
 import numpy as np
 import argparse
 import json, yaml
 import os
 import os.path as osp
+
 import torch
 import pyvista as pv
-import trimesh
-
 
 parser = argparse.ArgumentParser(
     description='Run generation'

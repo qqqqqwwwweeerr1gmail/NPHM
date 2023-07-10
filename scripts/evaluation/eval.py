@@ -1,17 +1,15 @@
 import json
 
 import numpy as np
-import torch
 import trimesh
 import os
-import os.path as osp
 import tyro
 from scipy.spatial import cKDTree as KDTree
 
-from NPHM.evaluation.metrics import eval_pointcloud
-from NPHM import env_paths
-from NPHM.evaluation.render_utils import gen_render_samples
-from NPHM.data.manager import DataManager
+from evaluation.metrics import eval_pointcloud
+import env_paths
+from evaluation.render_utils import gen_render_samples
+from data import DataManager
 
 
 

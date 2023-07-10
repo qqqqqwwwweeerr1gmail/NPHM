@@ -2,7 +2,7 @@ import os
 
 import point_cloud_utils as pcu
 
-from NPHM import env_paths
+import env_paths
 import trimesh
 from typing import Literal, Union, Dict, List, Optional
 import numpy as np

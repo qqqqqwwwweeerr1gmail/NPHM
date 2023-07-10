@@ -2,8 +2,8 @@ import pathlib
 import pyvista as pv
 import numpy as np
 
-from NPHM.data.manager import DataManager
-from NPHM.utils.mesh_operations import cut_trimesh_vertex_mask
+from data import DataManager
+from utils.mesh_operations import cut_trimesh_vertex_mask
 
 def print_segment(segment_name):
     print('################')

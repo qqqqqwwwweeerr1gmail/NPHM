@@ -3,9 +3,9 @@ import numpy as np
 import os
 from multiprocessing import Pool
 
-from NPHM import env_paths
-from NPHM.data.manager import DataManager
-from NPHM.utils.mesh_operations import cut_trimesh_vertex_mask
+import env_paths
+from data import DataManager
+from utils.mesh_operations import cut_trimesh_vertex_mask
 
 
 
@@ -39,7 +39,7 @@ def main(s):
     manager = DataManager()
     expressions = manager.get_expressions(subject=s)
     for expression in expressions:
-        if not VIZ and os.path.exists(manager.get_train_path_deformation(s, expression, rnd_file=env_paths.NUM_SPLITS_EXPR-1)):
+        if not VIZ and os.path.exists(manager.get_train_path_deformation(s, expression, rnd_file=env_paths.NUM_SPLITS_EXPR - 1)):
             print('skip')
             continue
 

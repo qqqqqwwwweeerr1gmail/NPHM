@@ -1,13 +1,8 @@
 import torch
-import torch.nn.functional as F
 from torch import optim
-from pytorch3d.ops import knn_points, knn_gather
 import trimesh
-import numpy as np
-import pyvista as pv
 from typing import List, Dict
 
-from NPHM.models.diff_operators import gradient
 from NPHM.models.iterative_root_finding import search, jac, nabla
 
 

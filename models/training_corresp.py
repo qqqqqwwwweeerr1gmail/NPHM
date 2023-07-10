@@ -11,9 +11,9 @@ import wandb
 
 import traceback
 from NPHM.models.loss_functions import compute_loss_corresp_forward
-from NPHM.utils.reconstruction import create_grid_points_from_bounds, mesh_from_logits
-from NPHM import env_paths
-from NPHM.data.manager import DataManager
+from utils.reconstruction import create_grid_points_from_bounds, mesh_from_logits
+import env_paths
+from data import DataManager
 from NPHM.models.reconstruction import get_logits, deform_mesh
 
 

@@ -7,8 +7,8 @@ SUPERVISION_DEFORMATION_OPEN = '/PATH/TO/YOUR/LARGE_TRAINING_DATA/EXPRESSIONS/'
 DATA_SINGLE_VIEW = '/PATH/TO/TEST_DATA/'
 DATA = '/PATH/TO/NPHM_DATASET/'
 
-DUMMY_DATA = '/PATH/TO/CLONED/REPO/dataset/dummy_data/dataset/'
-DUMMY_single_view = '/PATH/TO/CLONED/REPO/dataset/dummy_data/single_view/'
+DUMMY_DATA = '/data/shuaiwan/nplm_dummy_data/dataset/'
+DUMMY_single_view = '/data/shuaiwan/nplm_dummy_data/single_view/'
 
 EXPERIMENT_DIR = '/PATH/TO/SAVE_CHECKPOINTS_AND_LOG_RECONSTRUCTIONS_DURING_TRAINING/'
 FITTING_DIR = '/PATH/TO/LOG_TEST_SET_RECONSTRUCTIONS'

@@ -1,6 +1,5 @@
-from NPHM import env_paths
-from NPHM.data.manager import DataManager
-import os
+import env_paths
+from data import DataManager
 import json
 import tyro
 

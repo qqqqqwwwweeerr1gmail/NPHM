@@ -1,5 +1,5 @@
 import torch
-from NPHM.models.diff_operators import jac, gradient
+from models.diff_operators import jac, gradient
 
 
 def broyden(g, x_init, J_inv_init, max_steps=50, cvg_thresh=1e-5, dvg_thresh=1, eps=1e-6):
